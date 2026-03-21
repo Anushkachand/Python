@@ -1,9 +1,11 @@
 # Python Overview
 
 # 1. What is Python
-- Python is a dynamically typed, general-purpose programming language that supports an object-oriented programming approach as well as a functional programming approach.
+- Python is a dynamically typed, general-purpose programming language that supports an **object-oriented programming** approach as well as a functional programming approach.
 - Python is also an interpreted and high-level programming language.
-- It was created by Guido van Rossum in 1989.
+- It was created by **Guido van Rossum** in 1989.
+
+----------------------------------------------------
 
 #  Features of Python
 - Python is simple and easy to understand.
@@ -11,7 +13,7 @@
 - Python is an open-source programming language.
 - Python provides extensive library support. Some of the popular libraries include NumPy, TensorFlow, Selenium, OpenCV, etc.
 - It is possible to integrate other programming languages within Python.
-
+------------------------------------------------------------
 #  What is Python used for?
 - Python is used in data visualization to create plots and graphical representations.
 - Python helps in data analytics to analyze and understand raw data for insights and trends.
@@ -26,7 +28,7 @@
 - It defines the proper arrangement of words, symbols, and statements so the computer can understand the program.
 - If the syntax is wrong, the program shows a syntax error.
 
-```
+``` python
     for i in range(5):
     print(i)
 ```
