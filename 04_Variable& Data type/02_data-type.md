@@ -79,10 +79,11 @@ Example:
 str1 = bytes(" home" "utf-8")
 memoryviewstr = memoryview(str)
 print(list(memoryviewstr[0]))
+```
 
 # Mutable vs Immutable Data Type
 
-## Mutable means changeable.
+### Mutable means changeable.
 - If a data type is mutable, it means you can add, remove, or modify its elements without creating a new object in memory. When you change a mutable object, its memory address (ID) stays the same.
 
 ## Common mutable data types:
@@ -101,7 +102,39 @@ Immutable means unchangeable. If a data type is immutable, it means its value ca
 - tuple
 - bool
 - bytes
+------------------------------------------------------------------------------------------
+
+# Data Conversion:
+- The process of converting numeric data from one type to another is called type conversion.
+- To convert an integer to a float, we use the float() function.
+
+## Python supports two types of type conversion: 
+ ### 1. Implicit Conversion (Automatic):
+- Smaller type → Bigger type
+- Prevents data loss
+
+
+### 2. Explicit Conversion (Type Casting):
+- Automatic conversion not possible
+- Need control over data
+
+# Important  Function :
+
+
+| Function  | Converts To | Example                       |
+| --------- | ----------- | ----------------------------- |
+| `int()`   | Integer     | `int(3.5) → 3`                |
+| `float()` | Float       | `float(5) → 5.0`              |
+| `str()`   | String      | `str(10) → "10"`              |
+| `list()`  | List        | `list("abc") → ['a','b','c']` |
+| `tuple()` | Tuple       | `tuple([1,2])`                |
+| `set()`   | Set         | `set([1,1,2]) → {1,2}`        |
+| `dict()`  | Dictionary  | `dict([(1,'a')])`             |
+
+
 ------------------------------------------------------------------------------
+# Mutable & Immutable
+
 - **Mutable** → Can change value (same memory )
 - **Immutable** → Cannot change value (new object created )
 
@@ -115,3 +148,46 @@ Immutable means unchangeable. If a data type is immutable, it means its value ca
 | Performance  | Faster updates    | Safer, more secure   |
 | Examples     | list, dict, set   | int, str, tuple      |
 +--------------+-------------------+----------------------+
+
+
+## Imp questions :
+
+### Ques1. Difference between:                                               <div align="right">(Amazon, 2023)</div>
+```
+a = a + [x]
+a += [x]
+```
+Ans: a = a + [x] → Creates new object (new memory location)
+- a += [x] → Modifies same object (in-place update)
+
+### Internal Working:
+- + → copy + merge → new memory allocated
+- += → uses __iadd__() → modifies existing object
+💡 Real Scenario:
+
+👉 In large-scale systems (like log processing / big data)
+
+- a + [x] → ❌ memory heavy, slow
+- += → ✅ faster, memory efficient
+
+### Ques 2. Mutable vs Immutable in memory                                            <div align="right">(  (Microsoft, 2022)</div>
+
+
+#  GOLDEN RULES (Must Remember)
+
+ - += → modifies same object
+ - + → creates new object
+ - {} → dictionary, not set
+- set() → empty set
+- Empty → False, Non-empty → True
+ - == → value compare     ```(Infosys, 2023)```
+- is → memory compare
+
+### Datatype conversion :
+- int() → removes decimal
+-  set() → removes duplicates
+-  bool() → empty = False
+-  str() → everything → string
+- Implicit → automatic
+-  Explicit → manual
+-  Base conversion → int(x, base)

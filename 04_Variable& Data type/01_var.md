@@ -84,12 +84,14 @@ Example:
 
 Concept: Memory optimization / interning
 ```
-a = 10
-b = 10
-print(a is b)
+     a = 10
+     b = 10
+     print(a is b)
+
 ```
 
  # Ques.  Variable scope
+
  ```
    x = 10
    def func():
