@@ -138,17 +138,16 @@ Immutable means unchangeable. If a data type is immutable, it means its value ca
 - **Mutable** → Can change value (same memory )
 - **Immutable** → Cannot change value (new object created )
 
-# Key Differemce between :
+# key difference 
 
-+--------------+-------------------+----------------------+
-| Feature      | Mutable 🔵        | Immutable 🔴         |
-+--------------+-------------------+----------------------+
-| Change Value | Yes               | No                   |
-| Memory ID    | Same              | Changes              |
-| Performance  | Faster updates    | Safer, more secure   |
-| Examples     | list, dict, set   | int, str, tuple      |
-+--------------+-------------------+----------------------+
+| Feature      | Mutable 🔵            | Immutable 🔴           |
+| ------------ | --------------------- | ---------------------- |
+| Change Value | Yes (can be modified) | No (cannot be changed) |
+| Memory ID    | Same                  | Changes (new object)   |
+| Performance  | Faster updates        | Safer, more secure     |
+| Examples     | list, dict, set       | int, str, tuple        |
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Imp questions :
 
