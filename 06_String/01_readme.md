@@ -25,12 +25,27 @@ string[start : end : step]
 text = "Python"
 print(text[::-1]) 
 ```
+### Repetition : Repeat a string multiple times.
+```python
+print("Hi " * 3)   
+```
 
-- Slicing with skip value 
+# Slicing with skip value 
 ```python
 website = "Flipkart" 
 print(website[0:6:2]) # 0 is starting index, 6 is ending index and 2 is skip value.
 ```
+
+### Concatenation String:  Combine two or more strings.
+
+```python
+name = "ikigai"
+Writter = "Hector Garcia"
+print(name + "" + Book)
+```
+
+
+
 
 ------------------------------------------------
 
@@ -84,4 +99,58 @@ Answer:
     print("abc123".isalnum())  # True
     print("abc123".isalpha())  # False
 ```
+
+Ques. Why string is immutable? 
+Ans: Strings are immutable in Python to ensure memory efficiency, better performance, hashability, and data safety.
+
+#### Explation:
+
+- Strings in Python are immutable because it helps in better performance, **memory optimization** , and safety.
+- First, Python uses string interning, so if **multiple variables** have the **same string** , they can share the same memory. If strings were mutable, changing one would affect others, which is unsafe.
+- Second, immutability makes strings **faster** and **efficient**, because Python doesn’t need to track changes.
+- Third, strings are **hashable**, so they can be used as dictionary keys and set elements. This is only possible if their value doesn’t change.
+- Also, it provides thread safety, since **no thread** can modify the string.
+
+----------------------------------------------------------------------------------------------
+#### Using Expressions inside f-Strings:
+You can perform operations, call functions, or use expressions directly inside the curly braces {}.
+```python
+price = 50
+quantity = 3
+print(f"Total cost: {price * quantity} USD")
+```
+
+
+- Formatting Dates using f-Strings
+
+```python
+from datetime import datetime
+today = datetime.now()
+print(f"Today is {today:%A, %B %d, %Y}")
+```
+
+
+## Escape Characters:
+-  quotation marks, newlines, tabs, or backslashes.
+
+- 
+```python
+a = "I am Anushka \n i am pursing b.tech CSE."
+print(a)
+```
+
+Common Escape Characters:
+
+| Escape | Meaning         | Example Output        |
+| ------ | --------------- | --------------------- |
+| `\"`   | Double quote    | "Hello"               |
+| `\'`   | Single quote    | 'Hello'               |
+| `\n`   | New line        | Line break            |
+| `\t`   | Tab space       | Horizontal tab        |
+| `\b`   | Backspace       | Removes previous char |
+| `\\`   | Backslash       | \                     |
+| `\r`   | Carriage return | Moves cursor to start |
+
+
+
 
