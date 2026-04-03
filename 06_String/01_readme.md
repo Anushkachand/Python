@@ -139,17 +139,7 @@ a = "I am Anushka \n i am pursing b.tech CSE."
 print(a)
 ```
 
-Common Escape Characters:
 
-| Escape | Meaning         | Example Output        |
-| ------ | --------------- | --------------------- |
-| `\"`   | Double quote    | "Hello"               |
-| `\'`   | Single quote    | 'Hello'               |
-| `\n`   | New line        | Line break            |
-| `\t`   | Tab space       | Horizontal tab        |
-| `\b`   | Backspace       | Removes previous char |
-| `\\`   | Backslash       | \                     |
-| `\r`   | Carriage return | Moves cursor to start |
 
 
 

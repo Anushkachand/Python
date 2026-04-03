@@ -36,7 +36,7 @@ Example 1 :
 - To write multi-line comments, you can use``` # ```at each line or you can use the multiline string.
 
 Example 1: 
-```
+```py
         # It will execute a block of code if a specified condition is true.
         # If the condition is false then it will execute another block of code.
         p = 7
@@ -47,7 +47,7 @@ Example 1:
     ```
 
     Example 2: The use of a multiline string.
-```
+```py
      Example 2: The use of a multiline string.
 
       """This is an if-else statement.
