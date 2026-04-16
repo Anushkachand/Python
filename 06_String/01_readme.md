@@ -106,6 +106,7 @@ Ans: Strings are immutable in Python to ensure memory efficiency, better perform
 #### Explation:
 
 - Strings in Python are immutable because it helps in better performance, **memory optimization** , and safety.
+
 - First, Python uses string interning, so if **multiple variables** have the **same string** , they can share the same memory. If strings were mutable, changing one would affect others, which is unsafe.
 - Second, immutability makes strings **faster** and **efficient**, because Python doesn’t need to track changes.
 - Third, strings are **hashable**, so they can be used as dictionary keys and set elements. This is only possible if their value doesn’t change.
