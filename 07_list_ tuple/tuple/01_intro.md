@@ -11,7 +11,10 @@ EX:
 
 ```py
 tup2 = (10,) # single tuple
+info = ("Marcus", 20, "MIT")
 ```
+
+
 
 # converting a list into a tuple:
 ```py
